@@ -1,0 +1,14 @@
+client.on("message", message =>{
+  if(message.content.startsWith("!botinfo")) {//definimos el comando
+const embed = new MessageEmbed()//definimos embed
+.setAuthor("u.u Bot", client.user.avatarURL())
+.setThumbnail(client.user.avatarURL())//hacemos un setAuhtor para que salga el nombre de tu bot y su foto de perfil
+.addField("Developer", ` Raider 0_0#0023`)//un field para el Developer pones tu nombre
+.addField("Ayudantes", `TUS AYUDANTES`)//si tienes ayudantes los pones si no tonces eliminalo
+.addField("Servers", ` ${client.guilds.cache.size}`)//hacemos un field para la cantidad de servers donde esta tu bot
+.addField("Usuarios", ` ${client.users.cache.size}`)//field para ver la cantidad de usuarios que pueden ver a tu bot
+.addField("Ram", ` ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)//aqui va la ram osea la memoria que usa tu bot
+.addField("Lenguaje", " JavaScript")//el lenguaje que en este caso es JavaScript
+.addField("Libreria", " Discord.js v12.2.0")//la libreria que es Discord.js v12
+message.channel.send(embed) //que envie el embed
+  }//y cerramos
