@@ -12,3 +12,4 @@ const embed = new MessageEmbed()//definimos embed
 .addField("Libreria", " Discord.js v12.2.0")//la libreria que es Discord.js v12
 message.channel.send(embed) //que envie el embed
   }//y cerramos
+ });
