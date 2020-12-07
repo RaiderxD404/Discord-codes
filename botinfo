@@ -1,8 +1,8 @@
 client.on("message", message =>{
   if(message.content.startsWith("!botinfo")) {//definimos el comando
 const embed = new MessageEmbed()//definimos embed
-.setAuthor("u.u Bot", client.user.avatarURL())
-.setThumbnail(client.user.avatarURL())//hacemos un setAuhtor para que salga el nombre de tu bot y su foto de perfil
+.setAuthor("u.u Bot", client.user.avatarURL()) //hacemos un setAuhtor para que salga el nombre de tu bot y su foto de perfil
+.setThumbnail(client.user.avatarURL())
 .addField("Developer", ` Raider 0_0#0023`)//un field para el Developer pones tu nombre
 .addField("Ayudantes", `TUS AYUDANTES`)//si tienes ayudantes los pones si no tonces eliminalo
 .addField("Servers", ` ${client.guilds.cache.size}`)//hacemos un field para la cantidad de servers donde esta tu bot
