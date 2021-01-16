@@ -13,3 +13,4 @@ const embed = new MessageEmbed() //hacemos el embed (Si tienen definido discord 
 .setColor("RANDOM") //seleccionamos el color (Pongan el que quiera, yo puse que sea random)
 message.channel.send(embed) //enviamos el embed
 } //cerramos
+//No al CYP :)
